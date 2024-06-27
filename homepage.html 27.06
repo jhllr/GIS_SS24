@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dein Pokedex</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Verweis auf die CSS-Datei -->
+    <script defer src="script.js"></script> <!-- Verweis auf die JS-Datei -->
+</head>
+<body>
+    <div class="background-banner"></div>
+    <div class="pokeball-background"></div>
+    <div class="top-bar"></div>
+    <div class="main-buttons">
+        <a href="pokedex.html" id="to-pokedex" class="button">Zum Pokédex</a>
+        <a href="freunde.html" class="button button-top button-friends">Freunde</a>
+        <a href="rangliste.html" class="button button-top button-rangliste">Rangliste</a>
+        <a href="kontakt.html" class="button button-top button-anmelden">Anmelden</a>
+    </div>
+    <div id="pokemon-list"></div>
+</body>
+</html>
+
