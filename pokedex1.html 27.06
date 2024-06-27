@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dein Pokédex - Pikachu Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            height: 100vh;
+            position: relative;
+            background-color: #f0f0f0;
+        }
+
+        .background-image {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://i.pinimg.com/originals/3f/ea/cf/3feacfa69c2cb52991d4f21d2e61aa4e.jpg') no-repeat center/cover;
+            opacity: 0.3;
+            z-index: -1;
+        }
+
+        .container {
+            width: 45%;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 1);
+            margin: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow-y: auto;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: black;
+            background-color: #958585;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #eeeeee;
+        }
+
+        h1, p, ul {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        ul {
+            text-align: left;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <img src="" alt="Pokémon Bild" id="pokemon-image">
+        <button class="button" id="add-image-button">Bild hinzufügen</button>
+        <button class="button" id="change-image-button">Bild ändern</button>
+        <button class="button" id="delete-image-button">Bild löschen</button>
+        <button class="button" id="edit-text-button">Text bearbeiten</button>
+        <a href="pokedex2.html" id="next-page-button" class="button">Nächste Seite</a>
+        <a href="pokedex.html" id="prev-page-button" class="button">Letzte Seite</a>
+    </div>
+    <div class="container" id="pokemon-details">
+        <h1>hi</h1>
+        <p><strong>Pokédex-Nummer:</strong> #025</p>
+        <p><strong>Typ:</strong> Elektro</p>
+        <p><strong>Höhe:</strong> 0,4 m</p>
+        <p><strong>Gewicht:</strong> 6,0 kg</p>
+        <p><strong>Kategorie:</strong> Maus-Pokémon</p>
+        <p><strong>Fähigkeiten:</strong></p>
+        <ul>
+            <li>Statik: Die Wahrscheinlichkeit, dass der Gegner bei Kontakt gelähmt wird.</li>
+            <li>Blitzfänger (Versteckte Fähigkeit): Zieht Elektro-Attacken an, um Schaden zu vermeiden und den eigenen Elektro-Attacken-Schaden zu erhöhen.</li>
+        </ul>
+        <p><strong>Geschlechtsverteilung:</strong> 50% männlich, 50% weiblich</p>
+        <p><strong>Entwicklungsstufen:</strong></p>
+        <ul>
+            <li>Vorentwicklung: Pichu (Freundschaft)</li>
+            <li>Weiterentwicklung: Raichu (durch Donnerstein)</li>
+        </ul>
+        <p><strong>Schwächen:</strong> Boden</p>
+        <p><strong>Resistenzen:</strong> Flug, Stahl, Elektro</p>
+        <p>Pikachu ist eines der bekanntesten und beliebtesten Pokémon weltweit. Ursprünglich entdeckt in der Kanto-Region, zeichnet sich Pikachu durch seine beeindruckende Fähigkeit aus, elektrische Ladungen zu speichern und freizusetzen. Sein markantes Aussehen – gelbes Fell, lange gelbe Ohren mit schwarzen Spitzen und ein Blitz-förmiger Schwanz – macht es unverwechselbar.</p>
+        <p>Pikachus Körper speichert Elektrizität in seinen Wangentaschen, die es bei Bedarf während Kämpfen oder zur Verteidigung entlädt. Die Intensität der elektrischen Entladungen kann stark variieren, je nach Gefühlslage und körperlicher Verfassung von Pikachu. Bei maximaler Entladung kann die Stromstärke hoch genug sein, um sogar einen Erwachsenen Menschen zu betäuben.</p>
+        <p>Pikachu bevorzugt den Kampf aus nächster Nähe, nutzt dabei seine Geschwindigkeit und Agilität, um Gegner mit schnellen und präzisen Elektro-Attacken wie "Donnerschock" und "Voltwechsel" zu überwältigen.</p>
+    </div>
+    <script src="script.js"></script> <!-- Verweis auf die JS-Datei -->
+</body>
+</html>
